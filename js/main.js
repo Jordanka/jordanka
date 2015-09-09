@@ -645,6 +645,7 @@
         var $thisThumb = $(this).closest('.mix');
         var $nextThumb = $(this).closest('.mix').next();
 
+        $lightbox.find('.project_skills_cont').empty();
         $lightbox.addClass('hide');
 
         var nextPageOverlay = function(){
@@ -686,6 +687,7 @@
         var $thisThumb = $(this).closest('.mix');
         var $prevThumb = $(this).closest('.mix').prev();
 
+        $lightbox.find('.project_skills_cont').empty();
         $lightbox.addClass('hide');
 
         var prevPageOverlay = function(){
