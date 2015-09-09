@@ -1,0 +1,551 @@
+/* -----------------------------
+ * USA Projects General CSS
+ *
+ * ---------
+ * CSS Index
+ *
+ * 001 - Meyer's Reset
+ * 002 - Fonts
+ * 003 - Box Model
+ * 003 - General Styles
+
+ * ---------------
+ * 001 - Meyer's reset
+ */
+
+ @import url("general.css");
+
+
+/* ---------------
+ * 004 - WORKS
+ */
+
+#ideahash,
+#cronologiahash,
+#tecnologiashash {
+	width: 100%;
+	height: 100px;
+}
+
+#idea h1, #cronologia h1, #tecnologias h1 {
+	color: #ff00a8;
+}
+
+.sechead p {
+	max-width: 700px;
+}
+
+#spacer {
+	width: 100%;
+	height: 140px;
+	clear: both;
+}
+
+#idea-content  {
+	font-size: 0.9em;
+	padding-top: 20px;
+}
+
+/* ---------------
+ * 004 - UNA IDEA GENERAL
+ */
+
+#idea-content {
+	width: 100%;
+	background-color: black;
+	color: white;
+	float: left;
+}
+
+#idea .small-view-more {
+	width: 205px;
+    display: inline-block;    
+	margin-bottom: 50px;
+}
+
+#idea .small-view-more i:before {
+	transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    display: inline-block;
+    font-size: 0.75em;
+}
+
+#idea-content h4, #dg-more h4, #techgraphs h4 {
+	float: left;
+	position:relative;
+	left: -20px;
+	border-bottom: solid 1px white;
+	padding: 20px 0px 10px 0; 
+	margin-top: 30px;
+	font-weight: bold;
+}
+
+#idea .sechead .cont-2 {
+	float: right;
+	position: relative;
+    top: -10px;
+}
+
+.itsme {
+  	float: left;
+  	margin-top: 20px;
+}
+
+.itsme h5 {
+	font-size: 1.2em;
+	color: #ff00a8;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.itsme p {
+	padding-bottom: 10px;
+	padding-right: 20px;
+}
+
+.clients  {
+	display: flex;
+  	justify-content: left;
+  	flex-flow: row wrap;
+	float: left;
+	margin: 30px 0;
+    padding: 0 20px;
+}
+
+.clients ul li {
+	margin-right: 10px;
+	float: left;
+} 
+
+.clients img {
+	padding: 0 20px;
+}
+
+#idea .experience {
+	float: right;
+	height: 350px;
+	padding-left: 30px;
+	border-left: solid 1px white;
+}
+
+#idea .experience a, #idea .experience a:visited {
+	color: white;
+}
+
+#idea .experience a:hover {
+	color: #ff00a8;
+}
+
+#idea-content .experience h4 {
+	left: 0;
+	margin-top: 0;
+	border: 0;
+	width: 100%;
+}
+
+#idea .experience ul {
+	margin-top: 40px
+}
+
+#idea .experience ul li {
+	padding-top: 20px
+}
+
+#idea .experience h5 {
+	font-size: 1.2em;
+	color: #ff00a8;
+}
+
+#idea .experience i {
+	font-size: 0.7em;
+	padding-left: 5px;
+}
+
+/* ---------------
+ * 004 - CRONOLOGÍA
+ */
+
+#cronologia .view-more {
+	width: 145px;
+}
+
+#Cronologia .mix,
+#Cronologia .gap{
+  display: inline-block;
+  width: 16.66%
+}
+
+#Cronologia .mix{
+  text-align: left;
+  background: black;
+  display: none;
+}
+
+#Cronologia .min {
+    width: 100%;
+    height: 100%;
+}
+
+#Cronologia .menu-bg {
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+}
+
+#Cronologia .chrono {
+    position: relative;
+    height: 75px;
+    width: 100%;
+    padding: 10px;
+}
+
+#Cronologia .chrono h3 {
+    color: #ff00a8;
+    font-size: 2rem;
+    float: left;
+    width: 100%;
+}
+
+#Cronologia .chrono p {
+    color: white;
+    font-size: 0.7rem;
+    float: left;
+}
+
+#Cronologia .thumb-hover {
+	top: 80px;
+	padding: 0 20px 0 30px;
+}
+
+#Cronologia .thumb-hover h3 {
+	font-weight: bold;
+	font-size: 150em;
+	color: #ff00a8;
+}
+
+#Cronologia .thumb-hover p {
+	font-size: 100em;
+	color: white;
+}
+
+@media all and (min-width: 420px){
+  #Cronologia .mix,
+  #Cronologia .gap{
+    width: 49.9%;
+  }
+}
+
+@media all and (min-width: 900px){
+    #Cronologia .mix,
+    #Cronologia .gap {
+        width: 16.663%
+    }
+}
+
+/* ---------------
+ * 004 - TECHNOLOGIES
+ */
+
+#techgraphs {
+	font-size: 0.9em;
+}
+
+#techgraphs h4 {
+	float: left;
+	position:relative;
+	left: -20px;
+	border-bottom: solid 1px black;
+	padding: 20px 0px 10px 0; 
+	margin-top: 30px;
+	font-weight: bold;
+}
+
+#tecnologias .experience {
+	float: right;
+	height: 400px;
+	padding-left: 30px;
+	border-left: solid 1px black;
+	padding-top: 20px;
+}
+
+#tecnologias .experience a, #tecnologia .experience a:visited {
+	color: white;
+}
+
+#tecnologias .experience a:hover {
+	color: #ff00a8;
+}
+
+#tecnologias .images img {
+	margin-right: 10px;
+}
+
+#tecnologias .experience h4 {
+	left: 0;
+	margin-top: 0;
+	border: 0;
+	width: 100%;
+}
+
+#tecnologias .experience ul {
+	margin-top: 40px
+}
+
+#tecnologias .experience ul li {
+	padding-top: 20px
+}
+
+#tecnologias .experience h5 {
+	font-size: 1.2em;
+	color: #ff00a8;
+}
+
+#tecnologias .experience i {
+	font-size: 0.7em;
+	padding-left: 5px;
+}
+
+/* Load animation */
+@-webkit-keyframes 
+	load { 0% {
+	stroke-dashoffset:0
+	}
+}
+
+@-moz-keyframes 
+	load { 0% {
+	stroke-dashoffset:0
+	}
+}
+
+@keyframes 
+	load { 0% {
+	stroke-dashoffset:0
+	}
+}
+
+/* Container */
+.skills {
+  	display: flex;
+  	justify-content: left;
+  	flex-flow: row wrap;
+  	margin: 0;
+  	padding: 0 20px;
+}
+
+.skills li {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  margin: 0 1.6rem;
+  margin-bottom: 55px;
+  -ms-transition: all .2s ease-in-out; /* IE 9 */
+  -webkit-transition: all .2s ease-in-out; /* Chrome, Safari, Opera */
+  transition: all .2s ease-in-out;  
+}
+
+.skills li:hover {
+  cursor: pointer;
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Chrome, Safari, Opera */
+  transform: scale(1.1); 
+}
+
+.skills li:before {
+  content: attr(data-name);
+  position: absolute;
+  width: 115%;
+  bottom: -2rem;
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+.skills li:after {
+  content: attr(data-percent);
+  position: absolute;
+  width: 100%;
+  top: 33px;
+  left: 0;
+  text-align: center;
+}
+
+.skills svg {
+  width: 5rem;
+  height: 5rem;
+}
+
+.skills svg:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+}
+
+.skills svg:nth-child(2) path {
+  fill: none;
+  stroke-width: 25;
+  stroke-dasharray: 629;
+  stroke: rgba(255, 255, 255, 0.9);
+  -webkit-animation: load 10s;
+  -moz-animation: load 10s;
+  -o-animation: load 10s;
+  animation: load 10s;
+}
+
+#idea button.click {
+	border: solid 1px #23bf8d;
+	color: #23bf8d;
+}
+
+#cronologia button.click {
+	border: solid 1px #064285;
+	color: #064285;
+}
+
+#tecnologias button.click {
+	border: solid 1px #008da7;
+	color: #008da7;
+}
+
+.container {
+	min-height: 400px;
+}
+
+@media (max-width: 1400px) and (min-width: 700px) { 
+    #nav-bar {
+        width: 600px;
+    }
+}
+
+@media (max-width: 1300px) { 
+	#idea-content h4, #dg-more h4, #techgraphs h4 {
+		left: 8.32%;
+		margin-top: -15px;
+	}
+
+	h4.clientstitle {
+		left: 8.32%;
+		margin-top: 45px;
+	}
+
+	.clients {
+		margin-top: 90px;
+	}
+
+	.skills, .clients {
+	    width: 66.66%;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 1100px) and (min-width: 811px) { 
+	.skills, .clients {
+		width: 58.4%;
+	}
+
+	.experience {
+		position: relative;
+	    left: -8.32%;
+	}
+}
+
+@media (max-width: 900px) {	
+	.sechead h1 {
+		font-size: 2.5em;
+	}
+
+	.sechead p {
+		font-size: 0.8em;
+		width: 100%;
+	}
+}
+
+@media (max-width: 810px){ 
+	.skills {
+		width: 50.08%;
+		left: 8.32%;
+	    position: relative;
+	    margin: 0 1rem;
+	}
+
+	.skills li {
+	    margin: 10px 2rem 50px 1rem;
+	}
+
+	.clientstitle {
+		clear: both;
+	}
+
+	.clients {
+	    width: 91.68%;
+	    margin: 0 auto 20px auto;
+	    left: 8.32%;
+	    position: relative;
+	    clear: both;
+	}
+
+	.experience {
+		position: relative;
+		width: 41.76%;
+	}
+}
+
+@media (max-width: 699px) { 
+    #nav-bar {
+        width: 180px;
+    }
+
+    #ideahash, #cronologiahash, #tecnologiashash {
+	    width: 100%;
+	    height: 180px;
+	}
+
+	.skills, .clients {
+		padding: 0;
+	}
+}
+
+@media (max-width: 550px) { 
+	.skills {
+		width: 100%;
+    padding: 0 12px;
+	    left:0;	    
+	    clear: both;
+	}
+
+	.skills li {
+	    margin: 10px 2rem 50px 1rem;
+	}
+
+	h4.clientstitle, .skillstitle {
+		clear: both;
+		margin-top: -15px;
+	}
+
+	.clients {
+	    width: 91.68%;
+	    margin: 0 auto 20px auto;
+	    left: 8.32%;
+	    position: relative;
+	    clear: both;
+	}
+
+	.experience {
+		width: 91.68%;
+	    margin: 0 auto 20px auto;
+	}
+}
+
+
+
+
+
+
+
+
+

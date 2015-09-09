@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jordanka</title>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,900,700italic,900italic,700,400italic,300,300italic' rel='stylesheet' type='text/css'>
+  <link href="css/home.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div id='nav-bar'>
+        <a class="menu-btn icon-list"><h3>Jordanka</h3></a>
+
+        <nav id='anchors'>
+            <a href="#slider">_Bienvenidos</a>
+            <a href="#abouthash">_Sobre mi</a>
+            <a href="#portfoliohash">_Portfolio</a>
+        </nav>
+    </div>
+        
+    <div id='menu-container'>
+        <!--Contenido del Menu Lateral insertado por JS-->
+    </div>
+
+    <div class="menu-bg hide"></div>
+  </header>                   
+
+  <nav id='quick-links'>
+    <a href="#" class="icon-search" alt="Search"></a>
+    <a href="#" class="icon-feather" alt="Blog"></a>
+    <a href="#" class="icon-send" alt="Contact"></a>
+  </nav>
+
+  <div id="slider" name="slider">
+    <div class="cont-12">
+      <a href="#" class="icon-arrow"></a>
+    
+      <div class="cont-11">
+        <div  id="slider-img" class="cont-7 slider slider-1"></div>
+        <div class="cont-4">
+            <h1 id="slider-h1" class="slider">Diseño<span>Web/Apps</span></h1>
+            <p id="slider-p" class="slider"></p>
+            <a href="works.html#webhash" id="slider-a" class="small-view-more slider" >[+] VIEW MORE</a>
+        </div>
+      </div>
+    
+      <a href="#" class="icon-arrow"></a>             
+    </div>
+  </div>
+
+    <nav id="cat-cont">
+        <ul class="inner">
+            <li class="category">
+                <span>[+] DISEÑO WEB/APPS</span>
+                <ul class="">
+                    <li><a href="works.html?filter=webs#webhash">_Sitios webs</a></li>
+                    <li><a href="works.html?filter=apps#webhash">_Mobile Apps</a></li>
+                    <li><a href="works.html?filter=ux#webhash">_UX/UI</a></li>
+                </ul>
+            </li>
+
+            <li class="category">
+                <span href="">[+] DISEÑO GRÁFICO</span>
+                <ul class="">
+                    <li><a href="works.html?filter=branding#graphichash">_Branding</a></li>
+                    <li><a href="works.html?filter=editorial#graphichash">_Editorial</a></li>
+                    <li><a href="works.html?filter=online#graphichash">_Marketing</a></li>
+                </ul>
+            </li>
+
+            <li class="category">
+                <span href="">[+] DISEÑO INDUSTRIAL</span>
+                <ul class="">
+                    <li><a href="works.html?filter=pendrives#industrialhash">_Pendrives</a></li>
+                    <li><a href="works.html?filter=products#industrialhash">_Products & Packagings</a></li>
+                    <li><a href="works.html?filter=stands#industrialhash">_Stands</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav> 
+
+    <div id="spacer" name="spacer"></div>
+    <div id="abouthash" name="abouthash"></div>
+
+    <section id="about">
+        <div class="cont-12">
+            <div class="cont-2"></div>
+
+            <div class="cont-7">
+                <h2>Hello, it's me.</h2>
+                <p></p>
+                <a class="small-view-more" >[+] VIEW MORE</a>
+            </div>
+        </div>
+    </section>              
+    <section id="process">
+        <div class="cont-12">
+            <!-- Process steps will be generated here -->
+        </div>
+    </section>
+
+    <div id="portfoliohash" name="portfoliohash"></div>
+
+    <section id="portfolio">
+        <div class="cont-12">
+            <div class="pager-list">
+                <!-- Pagination buttons will be generated here -->
+            </div>
+            <a class="filter view-more" data-filter="all" href="works.html">VER TODO</a>
+        </div>       
+        
+        <div id="Container" class="container">
+            <!-- Mix Images will be generated here -->    
+        </div>
+    </section>   
+  
+    <div id="spacer" name="spacer"></div>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/vendor/jquery-1.11.0.js"></script>
+    <script src="js/vendor/handlebars-v2.0.0.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <script src="http://tseoc.co.uk/chris/jquery.mixitup-pagination.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script id="process-template" type="text/x-handlebars-template">
+      <div class="cont-2">
+        <img src="assets/images/{{title}}.png">
+        <p>{{content}}</p>
+      </div>
+    </script>
+
+    <script id="thumbs-template" type="text/x-handlebars-template">
+      <div class="mix" data-myorder="{{id}}">
+        <div class="thumb-hover hide">
+          <h3>{{titulo}}</h3>
+          <p>{{cliente}} | <span>{{fecha}}</span></p>
+        </div>
+        <img class="min" src="assets/works/{{miniatura}}">
+
+        <div class="project_cont hide">
+          <div class="project_controls">
+            <a href="#" class="icon-arrow-right"></a>
+            <a href="#" class="icon-arrow"></a>
+            <a href="#" class="icon-close"></a>
+          </div>
+      
+          <div class="cont-12">
+            <div class="project_info cont-3">
+              <h2>{{titulo}}</h2>
+              <h4>{{seccion}} <span>| {{subseccion}}</span></h4>
+              <div class="project_data">
+                <p>PROVEEDOR: <span>{{proveedor}}</span></p>
+                <p>CLIENTE: <span>{{cliente}}</span></p>
+                <p>FECHA: <span>{{fecha}}</span></p>
+              </div>
+
+              <div class="project_min">{{{min}}}</div>
+              
+              <p>{{detalle}}</p>
+
+              <div class="project_skills_cont"></div>
+              <p class="project_skills hide">{{skills}}</p>
+            </div>
+
+            <div class="project_img cont-8">{{{large}}}</div> 
+          </div> 
+        </div>
+      </div>
+    </script>
+
+</body>
+</html>

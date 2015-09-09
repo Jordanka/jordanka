@@ -1,0 +1,849 @@
+/* -----------------------------
+ * Jordanka General CSS
+ *
+ * ---------
+ * CSS Index
+ *
+ * 001 - Meyer's Reset
+ * 002 - Fonts
+ * 003 - Box Model
+ * 003 - General Styles
+
+ * ---------------
+ * 001 - Meyer's reset
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ----------
+ * 002 - FONTS
+ */
+
+@font-face {
+    font-family: 'OCRAExtendedRegular';
+    src: url('../assets/fonts/ocraext.eot');
+    src: url('../assets/fonts/ocraext.eot') format('embedded-opentype'),
+         url('../assets/fonts/ocraext.woff2') format('woff2'),
+         url('../assets/fonts/ocraext.woff') format('woff'),
+         url('../assets/fonts/ocraext.ttf') format('truetype'),
+         url('../assets/fonts/ocraext.svg#OCRAExtendedRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../assets/icons/icomoon.eot?-p4jtn1');
+    src:url('../assets/icons/icomoon.eot?#iefix-p4jtn1') format('embedded-opentype'),
+        url('../assets/icons/icomoon.woff?-p4jtn1') format('woff'),
+        url('../assets/icons/icomoon.ttf?-p4jtn1') format('truetype'),
+        url('../assets/icons/icomoon.svg?-p4jtn1#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ----------
+ * 002 - ICONS
+ */
+
+[class^="icon-"], [class*=" icon-"], [class*="page-next"], [class*="page-prev"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+    content: "\e600";
+}
+
+.icon-arrow-right:before {
+    content: "\e605";
+}
+
+.icon-feather:before {
+    content: "\e601";
+}
+
+.icon-list:before {
+    content: "\e602";
+}
+
+.icon-search:before {
+    content: "\e603";
+}
+
+.icon-send:before {
+    content: "\e604";
+}
+
+.icon-angle-right:before {
+    content: "\f105";
+}
+
+.icon-angle-left:before {
+    content: "\f104";
+}
+
+.icon-angle-double-left:before {
+    content: "\f100";
+}
+
+.icon-home:before {
+    content: "\f015";
+}
+
+.icon-facebook:before {
+    content: "\f09a";
+}
+
+.icon-linkedin:before {
+    content: "\f0e1";
+}
+
+.icon-behance:before {
+    content: "\f1b4";
+}
+
+.icon-close:before {
+    content: "\e606";
+}
+
+/* ---------------
+ * 003 - Box Model
+ */
+
+* {
+    /* Highly recommended to avoid any width alterations in the Slidebars or Site, which may cause horizontal scrolling. */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* ----------
+ * 005 - GRID
+ */
+
+.cont-12 {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.cont-11 {
+    width: 91.68%;
+    margin: 0 auto;
+}
+
+.cont-10 {
+    width: 83.36%;
+    margin: 0 auto;
+}
+
+.cont-9 {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.cont-8 {
+    width: 66.66%;
+    margin: 0 auto;
+}
+
+.cont-7 {
+    width: 58.4%;
+    margin: 0 auto;
+}
+
+.cont-6 {
+    width: 50.08%;
+    margin: 0 auto;
+}
+
+.cont-5 {
+    width: 41.76%;
+    margin: 0 auto;
+}
+
+.cont-4 {
+    width: 33.33%;
+    margin: 0 auto;
+}
+
+.cont-3 {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.cont-2 {
+    width: 16.8%;
+    margin: 0 auto;
+}
+
+.cont-1 {
+    width: 8.32%;
+    margin: 0 auto;
+}
+
+
+/* ----------
+ * 004 - GENERAL STYLES
+ */
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'OCRAExtendedRegular';
+}
+
+html {
+    min-height: 100%
+}
+
+body {
+    height: 100%
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+h1 span{
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p {
+    font-size: 0.9em;
+    line-height: 1.3em
+}
+
+hr {
+    margin: 40px 0;
+    clear: both;
+}
+
+button {
+    background: none;
+    border: 0;
+    padding: 0;
+    font-family: 'OCRAExtendedRegular';
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0 !important;
+}
+
+.small-view-more {
+    border: solid 1px black;    
+    color: black;
+    margin-top: 25px;
+    padding: 5px 15px;
+    font-size: 0.75em;
+    display: block;
+    width: 130px;
+    clear: both;
+}
+
+.view-more {
+    border: solid 1px black;    
+    color: black;
+    padding: 7px 20px;
+    font-size: 0.85em;
+    display: block;
+    width: 130px;
+}
+
+.hide {
+    display: none;
+}
+
+.inner {
+    width: 101%
+}
+
+
+/* ---------------
+ * 001 - NAVBAR
+ */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+}
+
+#nav-bar {
+    position: relative;
+    float: left;
+    background-color: black;
+    width: 600px;
+    padding-right: 10px;
+}
+
+#nav-bar a {
+    font-size: 2em;
+}
+
+#nav-bar a:before {
+    position: relative;
+    color: white;
+    padding-top: 2px;
+    left: -15px;
+    float: left;  
+    color: white;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+
+#nav-bar a:hover:before {
+    left: -10px;
+}
+
+#nav-bar h3 {
+    position: relative;
+    left: -5px;
+    float: left;
+    padding: 8px 10px 0 0;
+    color: #ff00a8;
+    font-size: 0.65em;
+    font-weight: 400;
+    color: #ff00a8;
+}
+
+
+#anchors {
+    float: right;
+}
+
+#anchors a {
+    color: white;
+    float: left;
+    padding: 15px 15px 12px 15px;
+    font-size: 0.7em;
+}
+
+#anchors a:hover {
+    color: #ff00a8;
+    font-weight: bold;
+}
+
+#quick-links {
+    position: fixed;
+    right:0;
+    background-color: #ff00a8;
+    z-index: 9999;
+}
+
+#quick-links a {
+    display: block;
+    margin: 12px 5px 12px 7px;
+    padding: 5px;
+    color: black;
+}
+
+#quick-links a:hover {
+    color: white;
+}
+
+#quick-links .icon-search {
+    font-size: 1.1em;
+}
+
+#quick-links .icon-feather {
+    font-size: 1.5em;
+}
+
+#quick-links .icon-send {
+    font-size: 1.2em;
+    padding-top: 0px !important;
+}
+
+@media (max-width: 1400px) and (min-width: 700px) { 
+    #nav-bar {
+        width: 500px;
+    }
+}
+
+@media (max-width: 699px) { 
+    #nav-bar {
+        width: 145px;
+    }
+
+    #anchors {
+        margin: 10px 0 15px 0;
+    }
+
+    #anchors a {
+        padding: 10px 15px 5px 25px;
+    }
+}
+
+
+/* ---------------
+ * 002 - MENU
+ */
+
+/*Fisrt Level*/
+#home-btn, #contact-btn, #back-btn {
+    color: #ff00a8;
+    font-size: 1.2em;
+    float: left;
+}
+
+#home-btn {
+    margin: 10px 5px 0 28px;
+}
+
+#contact-btn {
+    font-size: 1.05em;
+    margin: 12px 5px 0 10px;
+}
+
+#back-btn {
+    font-size: 1.4em;
+    margin: 8px 20px 0 0;
+    float: right;
+}
+
+#menu-container > a i:before {
+    position: relative;
+    top: 1px;
+}
+
+#menu-container > a:hover {
+    color: white;
+}
+
+#menu-container {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #000;
+    z-index: 100;
+}
+
+#menu-container > ul {
+    margin-top: 40%;
+}
+
+#menu-container ul li {
+    font-size: 0.8em;
+    color: #ff00a8;
+    padding: 12px 0;
+}
+
+#menu-container ul li:before {
+    content:"a";
+    font-size: 0.5em;
+    padding: 10px 0;
+}
+
+#menu-container .sub-menu-container li {
+    font-size: 1em;
+    color: white;
+    padding: 5px 10px 5px 40px;
+}
+
+#menu-container .sub-menu-container li:before{
+    content:"";
+}
+
+.sub-menu-btn {
+    padding-left: 15px;
+    position: relative;
+    left:0;
+    -webkit-transition: all .5s ease;
+       -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+         -o-transition: all .5s ease;
+            transition: all .5s ease;
+}
+
+.sub-menu-btn:hover{
+    left:15px;    
+}
+
+/*Second Level*/
+.sub-menu-container {
+    position: relative;
+    left: -250px;
+    padding-top: 20px;
+}
+
+.sub-menu-container a {
+    color: white;
+}
+
+#me-menu:before {
+    background-color: #ff00a8;
+}
+
+#me-menu > a, #me-menu ul li a:hover, #me-menu:before {
+    color: #ff00a8;
+}
+
+#dw-menu:before {
+    background-color: #23bf8d;
+}
+
+#dw-menu > a, #dw-menu ul li a:hover, #dw-menu:before {
+    color: #23bf8d;
+}
+
+#dg-menu:before {
+    background-color: #1258A6;
+}
+
+#dg-menu > a, #dg-menu ul li a:hover, #dg-menu:before {
+    color: #1258A6;
+    font-weight: bold;
+}
+
+#di-menu:before {
+    background-color: #008da7;
+}
+
+#di-menu > a, #di-menu ul li a:hover, #di-menu:before {
+    color: #008da7;
+}
+
+/* ---------------
+ * 004 - MIXIT UP
+ */
+
+.container_btn {
+    text-align: center;
+}
+
+.page-prev span {
+    cursor: pointer;
+    font-size: 1.1em;
+    padding: 5px;
+    border: solid 1px black;    
+    color: black;
+    margin-left: 2%;
+    float: left;
+}
+
+.page-next span {
+    cursor: pointer;
+    font-size: 1.1em;
+    padding: 5px;
+    border: solid 1px black;    
+    color: black;
+    margin-right: 2%;
+    float: right;
+}
+
+#web-apps .view-more,
+#graphic .view-more,
+#industrial .view-more,
+#cronologia .view-more {
+    display: inline-block;
+    margin: 0 auto 30px auto;
+}
+
+#portfolio .view-more {
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+
+.page-prev span:before {
+    content:"\e605";
+}
+
+.page-next span:before {
+    content:"\e600";
+}
+
+.page-number {
+    display: none;
+}
+
+.disabled span{
+    border: solid 1px #ccc; 
+    color: #ccc;
+    cursor: auto;
+}
+
+.container{
+  text-align: left;
+  font-size: 0.1px;
+  background: #fff;
+  height: 66.6%;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.container:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.container .mix,
+.container .gap{
+  display: inline-block;
+  width: 49.99%;
+}
+
+.container .mix{
+  text-align: left;
+  background: black;
+  display: none;
+}
+
+.container .min {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-bg {
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+}
+
+@media all and (min-width: 420px){
+  .container .mix,
+  .container .gap{
+    width: 49.9%;
+  }
+}
+
+@media all and (min-width: 900px){
+    .container .mix,
+    .container .gap {
+        width: 24.99%;
+    }
+}
+
+/* ---------------
+ * 004 - PROJECT PAGE
+ */
+
+.project_cont {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 9999;
+}
+
+.project_controls {
+    padding: 20px;
+    position: fixed;
+    background-color: white;
+    right: 0;
+}
+
+.project_controls .icon-arrow, .project_controls .icon-arrow-right, .project_controls .icon-close {    
+    padding: 5px;
+    border: solid 1px black;
+    color: black;
+    font-size: 160em;
+    margin-left: 10px;
+}
+
+.project_controls .icon-close {
+    padding: 5px 8px;
+}
+
+.project_img{
+   float: right;
+   margin-top: 80px;
+} 
+
+.project_img img{
+   margin-bottom: 20px;
+}
+
+.project_info {
+    padding-right: 50px;
+    font-size: 160em;
+    margin-top: 80px;
+    position: fixed;
+}
+
+.project_info h2 {
+    margin-top: 50px;
+    font-size: 2.5em;
+    color: #064285;
+    line-height: 1.2em;
+}
+
+.project_info h4 {
+    font-size: 0.875em;
+    margin-top: 40px;
+    color: #064285;
+    text-transform: uppercase;
+}
+
+.project_info h4 span {
+    color: black;
+}
+
+.project_data {
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+
+.project_info p {
+    font-size: 0.815em;
+}
+
+.project_skills {
+    padding-top: 15px;
+}
+
+.project_skills_cont {
+  padding-top: 20px;
+}
+
+.project_skills_cont img{
+  margin-right: 5px;
+
+}
+
+.project_img img {
+    border: solid 1px black;
+}
+
+.project_min {
+  padding: 10px 0 30px 0;
+}
+
+.project_min img {
+  border: 1px solid black;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.project_min img:hover {
+  cursor: pointer;
+}
+
+.mix > img {
+    opacity: 1;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+
+.mix > img:hover {
+    opacity: 0.05;
+    cursor: pointer;
+}
+
+.thumb-hover {
+    position: relative;
+    width:100%;
+    height:0;
+    float: left;
+    top: 170px;
+    padding-left: 30px;
+}
+
+.thumb-hover:hover {
+    cursor: pointer;
+}
+
+.thumb-hover h3 {
+    font-weight: bold;
+    font-size: 200em;
+    color: #ff00a8;
+}
+
+.thumb-hover p {
+    font-size: 150em;
+    color: white;
+}
+
