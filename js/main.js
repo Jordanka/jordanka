@@ -614,6 +614,14 @@
       	$lightbox.css({height: $( document ).height()});
       	$lightbox.css({top: 0});
       	$( document ).scrollTop(0);
+
+      	if($lightbox.find('h4 span').text() == '| ux'){
+      		$lightbox.find('.project_data').hide();
+      		$lightbox.find('.project_skills_cont').hide();      		
+      	} else {
+      		$lightbox.find('.project_data').show();
+      		$lightbox.find('.project_skills_cont').show();
+      	}
         
         var skillsArray = $lightbox.find('.project_skills').text().split(',');
         $.each(skillsArray, function(key, skill){
