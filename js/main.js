@@ -632,7 +632,11 @@
       var $catThumbs = $lightbox.closest('.container');
 
       $lightbox.find('.icon-close').on('click', function(){
-        window.location.hash = hash;
+      	$('#anchors').find('a').each(function(){
+      		if($(this).attr('href') == "#"+hash){
+      			$(this).click();
+      		};
+      	});
         $lightbox.addClass('hide');
         $lightbox.find('.project_skills_cont').empty();
       });
